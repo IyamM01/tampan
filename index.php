@@ -1,16 +1,16 @@
 <?php
-// include 'db_config.php';
+include 'db_config.php';
 
-// // Ambil status & lokasi tempat sampah dari database
-// $sql = "SELECT status, latitude, longitude FROM tempat_sampah WHERE id = 1";
-// $result = $conn->query($sql);
-// $row = $result->fetch_assoc();
+// Ambil status & lokasi tempat sampah dari database
+$sql = "SELECT status, latitude, longitude FROM tempat_sampah WHERE id = 1";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
 
-// $status = $row['status'];
-// $latitude = $row['latitude'];
-// $longitude = $row['longitude'];
+$status = $row['status'];
+$latitude = $row['latitude'];
+$longitude = $row['longitude'];
 
-// $conn->close();
+$conn->close();
 ?>
 
 <!DOCTYPE html>
